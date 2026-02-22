@@ -10,7 +10,7 @@ A responsive and interactive front-end web application developed using HTML, CSS
 https://pratik-6334.github.io/interactive-user-explorer/
 
 🔗 GitHub Repository:  
-https://github.com/yourusername/interactive-user-explorer
+https://github.com/Pratik-6334/interactive-user-explorer/tree/main
 
 ---
 
@@ -72,13 +72,10 @@ It demonstrates:
 **Pratik Pradhan**
 
 Front-End Developer  
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/Pratik-6334
 
 ---
 
 ## ⭐ Acknowledgment
 
 Thanks to Cognifyz Technologies for providing this internship opportunity to enhance practical front-end development skills.
-
-
-## 📂 Project Structure
