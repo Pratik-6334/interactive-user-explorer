@@ -7,7 +7,7 @@ A responsive and interactive front-end web application developed using HTML, CSS
 ## 🚀 Live Demo
 
 🔗 Live Website:  
-https://yourusername.github.io/interactive-user-explorer/
+https://pratik-6334.github.io/interactive-user-explorer/
 
 🔗 GitHub Repository:  
 https://github.com/yourusername/interactive-user-explorer
