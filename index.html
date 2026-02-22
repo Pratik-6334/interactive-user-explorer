@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cognifyz Front-End Internship Project</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container">
+
+            <h1>Cognifyz Front-End Internship Project</h1>
+
+            <p>
+                This project demonstrates responsive design, JavaScript
+                interactivity,
+                API integration, and form validation.
+            </p>
+
+            <img src="project-image.png" alt="Interactive User Explorer Project" style="width:100%; max-width:600px;">
+
+            <!-- Background Toggle -->
+            <h2>Interactive Feature</h2>
+
+            <button onclick="changeBackground()">
+                Toggle Warm Background
+            </button>
+
+            <!-- API Section -->
+            <h2>API Integration</h2>
+
+            <button onclick="loadUsers()">
+                Load Users from API
+            </button>
+
+            <ul id="userList"></ul>
+
+            <!-- Contact Form -->
+            <h2>Contact Form</h2>
+
+            <form onsubmit="return validateForm()">
+
+                <label>Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+            <p id="message"></p>
+
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
