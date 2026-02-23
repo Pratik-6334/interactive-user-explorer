@@ -12,24 +12,27 @@ function changeBackground() {
 
 async function loadUsers() {
 
+    const list = document.getElementById("userList");
+
+    list.innerHTML = "<li>Loading users...</li>";
+
     try {
 
-        const response = await fetch(
-            "https://jsonplaceholder.typicode.com/users"
-        );
+        const response = await fetch("https://jsonplaceholder.typicode.com/users");
+
+        if (!response.ok) {
+            throw new Error("API response failed");
+        }
 
         const data = await response.json();
 
-        const list = document.getElementById("userList");
-
         list.innerHTML = "";
 
-        data.forEach(function (user) {
+        data.forEach(user => {
 
             const li = document.createElement("li");
 
-            li.textContent =
-                user.name + " (" + user.email + ")";
+            li.textContent = `${user.name} (${user.email})`;
 
             list.appendChild(li);
 
@@ -39,8 +42,9 @@ async function loadUsers() {
 
     catch (error) {
 
-        document.getElementer("userList").innerHTML =
-            "<li>Failed to load users.</li>";
+        list.innerHTML = "<li style='color:red;'>Failed to load users. Check Live Server.</li>";
+
+        console.error(error);
 
     }
 
